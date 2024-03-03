@@ -1,0 +1,2 @@
+# ShitoriGame
+Japanese Word Game
