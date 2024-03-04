@@ -6,19 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>死闘 (Shi-Tōu) - Word Duel</title>
-  <link rel="stylesheet" href="style.css"> <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="wrapper">  <h1>死闘 (Shi-Tōu)</h1>
+  <div class="wrapper">
+    <h1>死闘 (Shi-Tōu)</h1>
     <p>⚔️ Enter a word that starts with the last letter of the previous word. ⚔️</p>
-    <input type="text" id="word" placeholder="Enter a word">
+    <input type="text" id="word" style="width: 96%;" placeholder="Enter any random word">
     <button onclick="play()">⚔️ Submit ⚔️</button>
     <button onclick="restart()">Restart</button>
     <p id="message"></p>
     <p id="score">Score: 0</p>
     <p id="lives">Lives: 2</p>
-    <p><a href="about.html">Know More</a></p>
+    <p id="time">Time: <span id="time-count">0</span></p> <p><a href="about.html">Know More</a></p>
   </div>
 </body>
 
