@@ -6,6 +6,11 @@ var score = 0;
 var lives = 2;
 
 function play() {
+    if(lives==0)
+    {
+        alert("Please Restart The Game")
+        return
+    }
     // Getting the input word value
     var value = document.getElementById("word").value.trim().toLowerCase();
     
@@ -34,6 +39,7 @@ function play() {
     // Update UI with score and lives
     document.getElementById("score").innerText = "Scores:"+ score;
     document.getElementById("lives").innerText = "Lives:" + lives;
+    document.getElementById("word").value=""
 }
 
 function endGame() {
